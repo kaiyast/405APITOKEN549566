@@ -1,6 +1,6 @@
 {
-    "name": "Node.js Getting Start",
-    "image": "heroku/nodejs",
-    "logo": "https://small-sharp-tool.com/logo.svg"
-    
-}
+    "name": "project name",
+    "description": "project description",
+    "logo": "http://node-js-sample.herokuapp.com/node.svg",
+    "image": "heroku/nodejs"
+  }
