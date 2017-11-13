@@ -247,6 +247,6 @@ apiRoutes.use(function(req, res, next) {
 
 app.use('/api', apiRoutes);
 
-app.listen(3333, function () {
-    console.log('Server Started on Port 3333...');
+app.listen(8080, function () {
+    console.log('Server Started on Port 8080...');
 });
