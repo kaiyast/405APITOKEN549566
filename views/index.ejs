@@ -1,0 +1,64 @@
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+            <form method="POST" action="/api/users" onsubmit="return completeAndRedirect();">
+                <label>Full Name</label><br>
+                <input type="text" name="name">
+                <br>
+                <label>Age</label><br>
+                <input type="number" name="age">
+                <br>
+                <label>Email</label><br>
+                <input type="text" name="email">
+                <br>
+                <label>Password</label><br>
+                <input type="password" id="password1" name="password1">
+                <br>
+                <label>Re-Password</label><br>
+                <input type="password" id="password2" name="password2">
+                <br>
+                <label >Select Role:</label><br>
+                <select  name="admin">
+                  <option>not admin</option>
+                  <option>admin</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Enter">
+            </form>
+
+            <%= title %>
+                <ul>
+                    <% users.forEach( function(user) { %>
+                        <li>
+                            [ <%= user['_id'] %> ]
+                            <%= user.name %> (
+                                <%= user.age %>) - <%= user.email %></li>
+                        <% }) %>
+                </ul>
+
+            <script>
+                function completeAndRedirect()
+                {
+                    var password1 = document.getElementById("password1").value;
+                    var password2 = document.getElementById("password2").value  ;
+                  
+                    if(password1 == password2)
+                    {
+
+                        return true;
+                    }
+                    else
+                    {
+                        alert("Password Not match");
+                        return false;
+                    }
+                }
+            </script>
+    </body>
+
+</html>
