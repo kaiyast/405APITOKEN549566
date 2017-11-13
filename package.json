@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
-  },"engines":{
+  },
+  "engines": {
     "node": "0.12.7"
   },
   "author": "",
@@ -16,6 +17,7 @@
     "ejs": "^2.5.7",
     "express": "^4.16.2",
     "jsonwebtoken": "^5.7.0",
+    "mongodb": "^2.2.33",
     "mongojs": "^2.4.1",
     "mongoose": "^4.4.5",
     "morgan": "^1.7.0",
